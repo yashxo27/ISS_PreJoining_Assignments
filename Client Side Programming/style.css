@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 650px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #d90429;
+}
+
+/* FORM STYLES */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 15px;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  accent-color: #ef233c;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  accent-color: #ef233c;
+}
+
+/* INPUTS */
+input.form-control,
+textarea.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1.5px solid #ddd;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #ef233c;
+  outline: none;
+  box-shadow: 0 0 5px rgba(239, 35, 60, 0.4);
+}
+
+/* CHECKBOX/RADIO LABELS */
+.checkbox-inline,
+.radio-inline {
+  margin-right: 20px;
+  font-size: 14.5px;
+  color: #444;
+}
+
+/* PRICE BOX */
+.price-display {
+  font-weight: 600;
+  font-size: 1.2em;
+  background: #fff5f5;
+  color: #222;
+  padding: 12px 20px;
+  border-left: 5px solid #ef233c;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* BUTTON */
+.btn-success {
+  background: linear-gradient(145deg, #ff416c, #ff4b2b);
+  border: none;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-success:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 65, 108, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+}

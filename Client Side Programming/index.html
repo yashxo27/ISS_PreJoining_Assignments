@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Order Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2 class="text-center">Pizza Order Form</h2>
+  <form id="pizzaForm" onsubmit="return validateForm()">
+
+    <!-- Pizza Size -->
+    <div class="form-group">
+      <label>Choose Pizza Size:</label><br>
+      <label class="radio-inline"><input type="radio" name="size" value="Small" data-price="200"> Small</label>
+      <label class="radio-inline"><input type="radio" name="size" value="Medium" data-price="350"> Medium</label>
+      <label class="radio-inline"><input type="radio" name="size" value="Large" data-price="500"> Large</label>
+    </div>
+
+    <!-- Toppings -->
+    <div class="form-group">
+      <label>Select Toppings (Rs.50 each):</label><br>
+      <label class="checkbox-inline"><input type="checkbox" class="topping" value="Cheese"> Cheese</label>
+      <label class="checkbox-inline"><input type="checkbox" class="topping" value="Mushroom"> Mushroom</label>
+      <label class="checkbox-inline"><input type="checkbox" class="topping" value="Olives"> Olives</label>
+      <label class="checkbox-inline"><input type="checkbox" class="topping" value="Pepperoni"> Pepperoni</label>
+    </div>
+
+    <!-- Delivery Address -->
+    <div class="form-group">
+      <label for="address">Delivery Address:</label>
+      <textarea class="form-control" id="address" name="address" required></textarea>
+    </div>
+
+    <!-- Contact -->
+    <div class="form-group">
+      <label for="contact">Contact Number:</label>
+      <input type="tel" class="form-control" id="contact" name="contact" pattern="[0-9]{10}" required>
+    </div>
+
+    <!-- Delivery Time -->
+    <div class="form-group">
+      <label for="time">Preferred Delivery Time:</label>
+      <input type="time" class="form-control" id="time" name="time" required>
+    </div>
+
+    <!-- Price -->
+    <div class="price-display" id="totalPrice">Total Price: Rs.0</div>
+
+    <!-- Submit -->
+    <button type="submit" class="btn btn-success btn-block">Place Order</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
