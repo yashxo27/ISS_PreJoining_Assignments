@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Pant>
+        
+    <Wallet>
+                
+        <Brand>Allen Solly</Brand>
+                
+        <Cash>2000</Cash>
+                
+        <Cards>
+                        
+            
+            <Card>Axis Credit Card</Card>
+                    
+            <Card>HDFC Credit Card</Card>
+        </Cards>
+            
+    </Wallet>
+        
+    <Phone>
+                
+        <Brand>Apple</Brand>
+                
+        <Model>Iphone 16 Pro</Model>
+                
+        <Price>119999</Price>
+            
+    </Phone>
+    
+</Pant>

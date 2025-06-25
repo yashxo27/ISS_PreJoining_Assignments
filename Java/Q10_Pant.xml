@@ -1,0 +1,15 @@
+<Pant>
+    <Wallet>
+        <Brand>Allen Solly</Brand>
+        <Cash>1200</Cash>
+        <Cards>
+            <Card>ICICI Debit Card</Card>
+            <Card>Axis Credit Card</Card>
+        </Cards>
+    </Wallet>
+    <Phone>
+        <Brand>Apple</Brand>
+        <Model>Iphone 16 Pro</Model>
+        <Price>125600</Price>
+    </Phone>
+</Pant>
