@@ -1,0 +1,4 @@
+com\bookstore\controller\RegisterServlet.class
+com\bookstore\controller\UserDB.class
+com\bookstore\controller\LoginServlet.class
+com\bookstore\controller\LogoutServlet.class
